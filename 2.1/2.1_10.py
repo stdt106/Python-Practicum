@@ -1,0 +1,9 @@
+n = input()
+m = str(input())
+ng = m[0]
+nk = m[1]
+ns = m[2]
+print("Группа №", ng, ".", sep='')
+print(ns, ". ", n, ".", sep='')
+print("Шкафчик: ", m, ".", sep='')
+print("Кроватка: ", nk, ".", sep='')
