@@ -1,0 +1,9 @@
+a = input()
+b = input()
+m = [0] * 4
+m[0] = a[0]
+m[1] = a[1]
+m[2] = b[0]
+m[3] = b[1]
+m = sorted(m)
+print(m[3], (int(m[1]) + int(m[2])) % 10, m[0], sep='')
