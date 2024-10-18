@@ -1,0 +1,10 @@
+n = int(input())
+mm = []
+for i in range(n):
+    x = input()
+    m = []
+    while x != "next":
+        m.append(int(x))
+        x = input()
+    mm.append(sum(m) / len(m))
+print('%.2f' % max(mm))
