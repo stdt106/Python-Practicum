@@ -1,0 +1,7 @@
+m = int(input())
+n = int(input())
+numbers = ''
+for i in range(n, m + 1, (n - m) % 10):
+    numbers += str(i) + ", "
+line = numbers[:len(numbers) - 2]
+print(line)
