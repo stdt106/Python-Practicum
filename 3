@@ -1,7 +1,2 @@
-m = int(input())
-n = int(input())
-numbers = ''
-for i in range(n, m + 1, (n - m) % 10):
-    numbers += str(i) + ", "
-line = numbers[:len(numbers) - 2]
-print(line)
+m, n = int(input()), int(input())
+print(", ".join([str(x) for x in range(n, m + 1, (n - m) % 10)]))
