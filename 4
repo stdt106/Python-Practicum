@@ -1,9 +1,3 @@
-n = int(input())
-m = []
-mxm = []
-for i in range(n):
-    m.append(int(input()))
-for i in range(n - 1):
-    if m[i] > m[i + 1]:
-        mxm.append(m[i + 1])
-print(max(mxm))
+nums = [int(input()) for _ in range(int(input()))]
+print(max([nums[i] for i in range(1, len(nums) - 1) if nums[i] < nums[i - 1]]))
+
