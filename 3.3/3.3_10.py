@@ -1,0 +1,1 @@
+"".join([rle[i][0] * rle[i][1] for i in range(len(rle))])
